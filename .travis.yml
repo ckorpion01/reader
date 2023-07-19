@@ -25,7 +25,7 @@ install:
   - export PATH=$PATH:~/.local/bin/
   - ls -la
   - echo "TODO COMPILE 32bit"
-  - yes | cp -f buildozer-32bit.spec buildozer.spec
+  - yes | cp -f buildozer-32bit.spec .buildozer.spec
   - yes | travis_wait 20 buildozer android debug
   - ls -la
   - ls bin/ -l
@@ -36,7 +36,7 @@ install:
   - ls -la
   - rm -r -f .buildozer
   - ls -la
-  - yes | cp -f buildozer-64bit.spec buildozer.spec
+  - yes | cp -f buildozer-64bit.spec .buildozer.spec
   - yes | travis_wait 20 buildozer android debug
   - ls -la
   - ls bin/ -l
